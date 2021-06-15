@@ -1,0 +1,260 @@
+body {
+  background: rgb(200, 158, 73) url('./images/background.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@font-face {
+  font-family: digital;
+  src: url('./fonts/digital-7.ttf');
+}
+
+@font-face {
+  font-family: apple-butter;
+  src: url('./fonts/apple-butter.ttf');
+}
+
+@font-face {
+  font-family: animal;
+  src: url('./fonts/animals.ttf');
+}
+
+h1 {
+  font-family: apple-butter;
+  font-size: 40px;
+  text-shadow: 0 0 30px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255);
+  color: rgb(164, 86, 40);
+
+  width: 50%;
+  margin: 20px auto;
+}
+
+/* // */
+/* // */
+/* Trivia */
+/* // */
+/* // */
+
+#QandA {
+  margin: auto;
+  position: relative;
+  top: 30%;
+  width: 60%;
+  background-color: #97d6997a;
+  box-shadow: 0 0 50px #ffffff;
+  border: ridge 10px goldenrod
+}
+
+#question {
+  font-size: 24px;
+  background-color: white;
+  border: ridge 10px goldenrod;
+  text-align: center;
+
+  margin: 10px auto;
+  padding: 5px;
+  width: 70%;
+  height: auto;
+  position: relative;
+}
+
+.answerBox {
+  margin: 0 5px;
+}
+
+/* // */
+/* // */
+/* Scoreboard */
+/* // */
+/* // */
+
+#scoreboard {
+  margin: 50px auto auto auto;
+  position: relative;
+  width: 60%;
+  background-color: #97d6997a;
+  box-shadow: 0 0 50px #ffffff;
+  border: ridge 5px goldenrod;
+  font: 25px digital;
+  height: 30px;
+}
+
+.teamName {
+  display: inline-block;
+  width: 35%;
+  height: 83%;
+  padding: 5px 0 0 0;
+}
+
+#team1Name {
+  background-color: rgb(119, 107, 138);
+  float: left;
+}
+
+#team2Name {
+  background-color: rgb(157, 151, 65);
+  float: right;
+}
+
+.teamScore {
+  display: inline-block;
+  width: 10%;
+  height: 83%;
+  padding: 5px 0 0 0;
+  background-color: black;
+  color: rgb(249, 251, 208);
+}
+
+#gameClock {
+  display: inline-block;
+  width: 10%;
+  height: 83%;
+  padding: 5px 0 0 0;
+  background-color: white;
+  color:black;
+}
+
+/* // */
+/* // */
+/* Message Board */
+/* // */
+/* // */
+
+#messageBoard {
+  margin: 10px auto auto auto;
+  position: relative;
+  width: 50%;
+  height: auto;
+  background-color: black;
+  box-shadow: 0 0 50px #ffffff;
+  border: ridge 5px goldenrod;
+  font: 20px digital;
+  color: rgb(249, 251, 208);
+}
+
+.message {
+  margin: 5px;
+}
+
+/* // */
+/* // */
+/* Football Field */
+/* // */
+/* // */
+
+#footballfield {
+  margin: 20px auto auto auto;
+  position: relative;
+  width: 590px;
+  height: 254px;
+  background-color: #97d6997a;
+  box-shadow: 0 0 50px #ffffff;
+  border: ridge 5px goldenrod;
+}
+
+.endZone {
+  width: 60px;
+  height: 244px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#team1EndZone {
+  background-color: rgb(119, 107, 138);
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+#team2EndZone {
+  background-color: rgb(157, 151, 65);
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.teamLogo {
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  position: absolute;
+  top: 97px;
+
+  font-family: animal;
+  font-size: 55px;
+  text-align: center;
+  margin: auto;
+}
+
+#team1Logo {
+  left: 7px;
+  transform: rotate(-90deg);
+  color: rgb(196, 187, 54);
+}
+
+#team2Logo {
+  right: 7px;
+  transform: rotate(90deg);
+  color: rgb(82, 45, 140);
+}
+
+#field {
+  background: rgb(77, 129, 71) url('./images/field.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 244px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 5px solid white;
+}
+
+#scrimmageLine {
+  width: 4px;
+  height: 100%;
+  background-color: yellow;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 293px;
+}
+
+#ball {
+  width: 30px;
+  height: 18px;
+  z-index: 3;
+  position: absolute;
+  top: 118px;
+  left: 277px;
+
+  background: yellow url('./images/ball.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 3px solid yellow;
+  border-radius: 15px;
+}
+
+/* // */
+/* // */
+/* Button */
+/* // */
+/* // */
+
+#newGameButton {
+  background-image: linear-gradient(to bottom right, rgb(171, 147, 171), rgb(140, 110, 140));
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 160px;
+  color: whitesmoke;
+  font-size: 25px;
+  padding: 3px 0 0 0;
+}
