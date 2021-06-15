@@ -1,0 +1,6 @@
+build/
+dist/
+node_modules/
+database/config.js
+package-lock.json
+

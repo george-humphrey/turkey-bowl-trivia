@@ -1,0 +1,29 @@
+{
+  "name": "turkey-bowl-trivia",
+  "version": "1.0.0",
+  "description": "Turkey Bowl Trivia game",
+  "author": "George Humphrey",
+  "main": "index.js",
+  "scripts": {
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon server/index.js",
+    "seed": "mysql -u root -p < database/schema.sql && node database/seed.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "express": "^4.15.0",
+    "jquery": "^3.1.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
